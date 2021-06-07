@@ -1,4 +1,4 @@
-pipeline{
+9pipeline{
         agent any
         environment {
             app_version = 'v1'
@@ -9,7 +9,7 @@ pipeline{
                 steps{
                     script{
                         if (env.rollback == 'false'){
-                            image = docker.build("[your-dockerhub-username]/chaperoo-frontend")
+                            image = docker.build("kuddin1234/chaperoo-frontend")
                         }
                     }
                 }
